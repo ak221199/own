@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8" /><!--Just charset-->
+	<meta name="language" content="English"><!--for language-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><!--for viewport-->
+	<meta name="description" content="An Official Portfolio Of Amit Kumar. A Full stack Web Developer and Programmer"><!--for description of website | upto 160 characters only-->
+	
+	
+	
+	<meta name="robots" content="index, follow"><!--for google crawling-->
+	<title>Amit Kumar | Personal Portfolio</title>
+
+	<!-- additional css file links -->
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="preload" href="style.css" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<script type="text/javascript" src="respond.js"></script>
+</head>
+<body>
+<div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
+<div class="loader">
+<!-- 	<img src="img/loader.gif" alt="loader-image"> -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+</div>
+<header id="header">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg full-width">
+				<a class="navbar-brand animation" href="#" data-animation="fadeInLeft"> &copy;A</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="ToggleNavigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav ml-auto animation" data-animation="fadeInRight">
+						<li class="nav-item active"><a href="#main" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#services" class="nav-link">Profile</a></li>
+						<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+</header>
+
+<section class="main d-flex justify-content-center" id="main">
+
+
+	<div id="myparticles"></div>
+
+	<div class="main-content align-self-center">
+		<div class="welcome">Amit Kumar</div>
+		<div class="type"><span class="mytext"></span></div>
+		<div class="social-icons">
+			<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<a href="#" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+
+		</div>
+
+		<a class="cta cta-portfolio" href="data:image/jpeg;base64,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" target="_blank">Resume</a>
+		<a class="cta cta-contact" href="#contact">Contact</a>
+	</div>
+
+	<svg viewBox="0 0 1400 100" class="svg-bottom">
+		<polygon points="0,0 200,100 1200,100 1400,0 1400,100 0,100 0,0" style="fill:#EFEFE8FF"></polygon>
+	</svg>
+	
+</section>
+
+
+<!-- about section -->
+<section class="section-padding about" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<img src="about.jpg" class="img-fluid " alt="Amit image" >
+			</div>
+			<div class="col-md-7">
+				<h3>About Me</h3>
+				<h5>Web Designer & Full Time Programmer</h5>
+				<p>I am currently working on Front-end Web development.I design, build and Skilled in languages/frameworks/api/websockets like JavaScript , Jquery , Bootstrap , Sql, Php, C, C++ and etc.</p>
+				<p>I take Coursera/Udemy/Pirple courses to keep myself enthralled and updated.I also love Technology and always try to learn , the crux of CS and parallely learn it along with my studies.</p>
+				<div class="row">
+
+					<div class="col-md-6 col-sm-3 ">
+						<div class="count-item">
+							<div class="numscroller numscroller-big-bottom scrollzip roller-title-number-1" data-slno="1" data-min="0" data-max="1000" data-delay="30" data-increment="20">690</div>
+							<div class="count-name-intro">Searched on Google</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-3 ">
+						<div class="count-item">
+							<div class="numscroller numscroller-big-bottom scrollzip roller-title-number-2" data-slno="2" data-min="0" data-max="110" data-delay="10" data-increment="2">110</div>
+							<div class="count-name-intro">Talent</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-3">
+						<div class="count-item">
+							<div class="numscroller numscroller-big-bottom scrollzip roller-title-number-3" data-slno="3" data-min="0" data-max="463" data-delay="10" data-increment="3">768</div>
+							<div class="count-name-intro">Cups of Coffee</div>
+						</div>
+					</div>
+					
+				</div>
+			
+				<!-- <a class="about-contact" href="#">Contact Me</a> -->
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!-- exp-skills -->
+
+<section class="section-padding exp-skills" id="services">
+
+		<svg viewBox="0 0 1400 100" class="svg-top">
+			<polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:#EFEFE8FF"></polygon>
+		</svg>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 education">
+					<div class="section-header">
+						<h3>Education</h3>
+					</div>
+					
+					<ul>
+						<li>
+							<h5>CBSE</h5>
+							<div><strong>Bihar</strong></div>
+						</li>
+
+						<li>
+							<h5>Bachelor in Computer Application</h5>
+							<div><strong>Chandigarh University</strong></div>
+						</li>
+
+
+					</ul>
+				</div>
+
+				<div class="col-md-4 experience">
+					<div class="section-header">
+						<h3>Skill Upgrade</h3>
+					</div>
+					<ul>
+						<li>
+							<h5>Web Developer</h5>
+							<h6><em>March 2020</em></h6>
+							<div><strong>UC Davis</strong></div>
+						</li>
+						<li>
+							<h5>C & C++</h5>
+							<h6><em>October 2019</em></h6>
+							<div><strong>IIT Bombay</strong></div>
+						</li>
+
+						<li>
+							<h5>Python</h5>
+							<h6><em>Persuing</em></h6>
+							<div><strong>Coursera</strong></div>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-4 skills">
+					<div class="section-header">
+						<h3>Skills</h3>
+					</div>
+					<ul>
+						<li>
+							<h6>Web Development</h6>
+							<div class="progress-content">
+								<div class="skill-progress" data-progress="98">
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<h6>Python </h6>
+							<div class="progress-content">
+								<div class="skill-progress" data-progress="88">
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<h6>C and C++</h6>
+							<div class="progress-content">
+								<div class="skill-progress" data-progress="99">
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<h6>Cloud Computing</h6>
+							<div class="progress-content">
+								<div class="skill-progress" data-progress="90">
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<h6>Node Js</h6>
+							<div class="progress-content">
+								<div class="skill-progress" data-progress="90">
+								</div>
+							</div>
+						</li>
+
+
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+
+		<svg viewBox="0 0 1400 100" class="svg-bottom">
+			<polygon points="0,0 200,100 1200,100 1400,0 1400,100 0,100 0,0" style="fill:white"></polygon>
+		</svg>
+	
+</section>
+
+<!-- services section -->
+<section class="services section-padding" >
+
+	<div class="container">
+		<div class="row">
+			<div class="section-header text-center full-width">
+				<h3>Services</h3>
+			</div>
+		</div>
+		<div class="services-content">
+			<div class="row animation" data-animation="fadeInLeft">
+				<div class="col-lg-4 text-center">
+					<div class="service-single">
+						<div class="icon-container d-flex justify-content-center">
+							<h5 class="service-icon"><i class="fa fa-laptop"></i></h5>
+						</div>
+						<h5 class="service-name">Web Design</h5>
+						<p class="service-description"> I can help you desinging your website from scratch. Find me on Freelancers as Amitkumar </p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 text-center">
+					<div class="service-single">
+						<div class="icon-container d-flex justify-content-center">
+							<h5 class="service-icon"><i class="fa fa-list-ul"></i></h5>
+						</div>
+						<h5 class="service-name">Custom Scripts/Api/Websocket</h5>
+						<p class="service-description"> I can Create Api, Php Scripts and Websockets which help you alot. . Find me on Freelancers as Amitkumar</p>
+					</div>
+				</div>
+
+			<div class="row animation" data-animation="fadeInRight">
+				<div class="col-lg-4 text-center">
+					<div class="service-single">
+						<div class="icon-container d-flex justify-content-center">
+							<h5 class="service-icon"><i class="fa fa-briefcase"></i></h5>
+						</div>
+						<h5 class="service-name">Web Development</h5>
+						<p class="service-description"> I can help you building your website from scratch. Find me on Freelancers as Amitkumar</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 text-center">
+					<div class="service-single">
+						<div class="icon-container d-flex justify-content-center">
+							<h5 class="service-icon"><i class="fa fa-leaf"></i></h5>
+						</div>
+						<h5 class="service-name">Graphic Desigining</h5>
+						<p class="service-description">I can help you in Graphic Desigining for your brand and many other purposes. Simple to Advance. Find me on Freelancers as Amitkumar </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+
+<!-- contact -->
+
+<section class="section-padding contact" id="contact" >
+
+	<svg viewBox="0 0 1400 100" class="svg-top">
+		<polygon points="0,100 200,0 1200,0 1400,100 1400,0 0,0 0,100" style="fill:white"></polygon>
+	</svg>
+
+	<div class="container">
+		<div class="section-header full-width text-center">
+			<div class="row">
+
+				<div class="col-md-12">
+					<h3>Contact</h3>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="contact-top text-center">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="contact-location"><i class="fa fa-location-arrow"></i> Address</div>
+					<p>Chandigarh - 140413</p>
+				</div>
+
+				<div class="col-md-4">
+					<div class="contact-email"><i class="fa fa-envelope"></i> Email</div>
+					<p>amit.hunter.55@gmail.com</p>
+				</div>
+
+				<div class="col-md-4">
+					<div class="contact-phone"><i class="fa fa-phone"></i> Phone</div>
+					<p>+91 6204****77</p>
+				</div>
+			</div>
+		</div>
+
+
+			<!-- <input type="text" name="name">
+			<input type="email" name="_replyto">
+			<input type="submit" value="Send"> -->
+		 
+		<div class="contact-for">
+		<form action="https://formspree.io/mnqgvvbo" method="POST">
+			<div class="row">
+				<div class="col-md-6">
+					<input type="text" id="name" name="name" placeholder="Enter Name">
+				</div>
+				<div class="col-md-6">
+					<input type="email" id="email" name="_replyto" placeholder="Enter Email">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<textarea id="message" name="message" rows="10" placeholder="Enter Message"></textarea>
+					<input type="submit"  class="" id="submit" value="Let's Chat :)">
+				</div>
+			</div>
+		</form>
+		</div>
+
+
+		
+	</div>
+	
+</section>
+
+<footer class="text-center">
+	<div><strong>😉 by Amit Kumar &copy; 2020</strong></div>
+</footer>
+
+<!-- js links -->
+<script type="text/javascript" src="jquery.min.js" defer></script>
+<script type="text/javascript" src="bootstrap.min.js" defer></script>
+<script type="text/javascript" src="numscroller-1.0.js" defer></script>
+<script type="text/javascript" src="particles.min.js" defer></script>
+<script type="text/javascript" src="myparticles.js" defer></script>
+<script type="text/javascript" src="typed.js" defer></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" defer></script>-->
+<script type="text/javascript" src="jquery.waypoints.min.js" defer></script>
+<script type="text/javascript" src="isotope.js" defer></script>
+<script type="text/javascript" src="owl.carousel.min.js" defer></script>
+<script type="text/javascript" src="jquery.nav.js" defer></script>
+<script type="text/javascript" src="main.js" defer></script>
+
+</body>
+</html>
